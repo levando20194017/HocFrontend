@@ -1,0 +1,158 @@
+/* --------------sign in-------------- */
+nav {
+    height: 100vh;
+    float: left;
+    background-image: url("../Image/startUp/signin5.png");
+    background-size: cover;
+}
+
+nav .welcome {
+    font-family: 'Chewy', cursive;
+    color: white;
+    font-size: 600%;
+}
+
+.signin {
+    margin-top: 10%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 300%;
+    color: rgb(19, 19, 202);
+}
+
+section {
+    background-color: rgb(245, 243, 243);
+}
+
+section .email {
+    font-family: 'Roboto', sans-serif;
+    font-size: 130%;
+}
+
+section .password {
+    font-family: 'Roboto', sans-serif;
+    font-size: 130%;
+}
+
+.forgot-password a:link {
+    text-decoration: none;
+    color: rgb(41, 41, 189);
+}
+
+.button-signin button {
+
+    padding: 4px 80px;
+    border-radius: 10px;
+    background-color: rgb(19, 19, 202);
+    border: rgb(245, 243, 243);
+}
+
+.button-signin b {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 150%;
+}
+
+.button-signin a:link {
+    text-decoration: none;
+    color: rgb(41, 41, 189);
+    font-weight: 500;
+}
+
+.button-signin p {
+    font-weight: 500;
+}
+
+/* -----------sign up------------ */
+.bg-form {
+    background-image: url("../Image/startUp/signin5.png");
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.login-container {
+    width: 45%;
+    margin-top: 15vh;
+    border-radius: 30px;
+    background-color: aliceblue;
+}
+
+.signup-title {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: rgb(13, 13, 189);
+    font-weight: 900;
+}
+
+
+.signup1 {
+    background-image: url("../Image/startUp/signup1.png");
+}
+
+.signup1 label b {
+    font-size: 120%;
+}
+
+.signup2 {
+    background-image: url("../Image/startUp/signup2.png");
+}
+
+.button-signup {
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.button-signup button {
+
+    padding: 4px 50px;
+    border-radius: 10px;
+    background-color: rgb(19, 19, 202);
+    border: rgb(245, 243, 243);
+}
+
+.button-signup b {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 150%;
+}
+
+/*forgot password*/
+.button-forgot {
+    margin-top: 5%;
+    margin-bottom: 4%;
+}
+
+.button-forgot button {
+
+    padding: 4px 50px;
+    border-radius: 10px;
+    background-color: rgb(19, 19, 202);
+    border: rgb(245, 243, 243);
+}
+
+.button-forgot b {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 150%;
+}
+
+p a:link {
+    text-decoration: none;
+}
+
+.block-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin-top: -5%;
+    margin-left: 7%;
+    box-shadow: inset 0px 0px 3px 3px rgb(206, 201, 201);
+}
+
+.block-icon img {
+    margin-top: 12%;
+    margin-left: 17%;
+}

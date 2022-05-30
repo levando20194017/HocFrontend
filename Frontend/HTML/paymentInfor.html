@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Reem Kufi' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <link href="../CSS/style.css" rel="stylesheet">
+    <title>Payment information</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/iconWeb.ico">
+</head>
+<body>
+    <div>
+        <div class="payment_info_text">
+            <h3 class="yourcart">Payment Information</h3>
+        </div>
+        <div class="fillPaymentInfoContainer">
+            <div class="fillPaymentInfo">
+                <h3 class="info">Recipient's name</h4>
+                <input class="infoInput" type="text" required>
+            </div>
+            <div class="fillPaymentInfo">
+                <h3 class="info">Phone number</h4>
+                <input class="infoInput" type="tel" required>
+            </div>
+            <div class="fillPaymentInfo">
+                <h3 class="info">Province</h4>
+                <input class="infoInput" list='provinceList' required>
+                <datalist id="provinceList">
+                    <option value="Hà Nội"></option>
+                    <option value="Khác"></option>
+                </datalist>
+            </div>
+            <div class="fillPaymentInfo">
+                <h3 class="info">Address</h4>
+                <input class="infoInput" type="text">
+            </div>
+            <div class="fillPaymentInfo">
+                <div class="btn_backToCart">
+                    <a href="" class="backToCart">Back to cart</a>
+                </div>
+                <div class="btn_confirm_paymentInfo">
+                    <a href="" class="backToCart">Confirm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+.jcarousel-skin-tango .jcarousel-container {
+	float: left;
+}
+
+.jcarousel-skin-tango {
+	float: left;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+	width: 245px;
+	padding: 20px 40px;
+}
+
+
+.jcarousel-skin-tango .jcarousel-clip {
+	overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+	width:  245px;
+	height: 75px;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-vertical {
+
+	height: 410px;
+	margin-top: 10px;
+}
+
+
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	margin-left: 0;
+	margin-right: 10px;
+}
+
+
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+	margin-right: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-item-vertical {
+	margin-bottom: 5px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+	background: #fff;
+	color: #000;
+}
+
+/**
+*  Vertical Buttons
+*/
+.jcarousel-skin-tango .jcarousel-next-vertical {
+	position: absolute;
+	bottom: 0px;
+	height: 25px;
+	cursor: pointer;
+	top:100%;
+	background: #333;
+	width: 100%;
+	opacity: 0.8;
+	text-align: center;
+}
+.jcarousel-skin-tango .jcarousel-next-vertical:before {
+	content: "\f107";
+	display: inline-block;
+	font-family: FontAwesome;
+	color: #fff;
+	font-size: 25px;
+}
+
+
+.jcarousel-skin-tango .jcarousel-prev-vertical {
+	position: absolute;
+	top: 0px;
+	height: 25px;
+	cursor: pointer;
+	background: #333;
+	width: 100%;
+	opacity: 0.8;
+	text-align: center;
+}
+.jcarousel-skin-tango .jcarousel-prev-vertical:before {
+	content: "\f106";
+	display: inline-block;
+	font-family: FontAwesome;
+	color: #fff;
+	font-size: 25px;
+}
+
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical,
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical:hover,
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical:focus,
+.jcarousel-skin-tango .jcarousel-next-disabled-vertical:active {
+	cursor: default;
+	opacity: .6;
+}
+
+
+
+
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical,
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical:hover,
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical:focus,
+.jcarousel-skin-tango .jcarousel-prev-disabled-vertical:active {
+	cursor: default;
+	opacity: .6;
+}

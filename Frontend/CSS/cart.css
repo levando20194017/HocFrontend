@@ -1,0 +1,102 @@
+.yourcart{
+    display: flex;
+    justify-content: center;
+    font-family: 'Reem Kufi' ;
+    font-style: normal ;
+    font-weight: bold;
+    font-size: 36px ;
+    line-height: 75px ;
+    color:#000;
+
+}
+.quantityOfProduct{
+    color: #000;
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+}
+.numOfProduct{
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 37px;
+    color:#000;
+    padding: 5px;
+    border: 1pt solid #000;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-left: 470px;
+    margin-right: 470px;
+
+}
+.text-info font-weight-bold{
+    color:#000 !important;
+}
+.button_remove{
+    display: flex;
+    text-decoration: none;
+    color: #fff !important;
+
+}
+.button_remove a{
+    text-decoration: none;
+    color: #fff !important;
+    transition: font-weight;
+    background: #000000;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+    font-family: 'Reem Kufi';
+    
+}
+.button_remove a:hover{
+    font-weight: bold;
+}
+.btn_confirm{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.btn_confirm a{
+    text-decoration: none;
+}
+.confirm{
+    color: #fff !important;
+    transition: font-weight;
+    background: #EB4335;
+    padding: 7px 120px 7px 120px;
+    border-radius: 20px;
+    font-family: 'Reem Kufi';
+    font-size: 20px;
+}
+.confirm:hover{
+    font-weight: bold;
+}
+.price_product{
+    color:#EB4335;
+}
+.line{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 0px 0px 50px 0px;
+}
+.total{
+    display: flex;
+    flex-direction: row;
+    justify-content:end;
+    font-size: 20px;
+    font-family: 'Reem Kufi';
+    font-weight: bold;
+    color:#000;
+    margin-bottom: 100px;
+}
+.total_text{
+    padding: 10px;
+}
+.total_price{
+    margin: 0px 0px 0px 150px;
+    color: #EB4335;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1pt solid #000;
+}

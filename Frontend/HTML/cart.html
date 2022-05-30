@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Reem Kufi' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
+    <link href="../CSS/style.css" rel="stylesheet">
+    <link href="../CSS/cart.css" rel="stylesheet">
+
+
+
+
+    <title>Cart</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/iconWeb.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- My CSS and JQuery -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+          <title>Bootstrap</title>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 16 16">
+          <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+          <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+          <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+          <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+          <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+        </symbol>
+      </svg>
+      
+      <main>
+      
+        <div class="HEADER fixed-top">
+          <header class="p-3">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0" id="main-menu">
+                  <li><a href="#" class="nav-link px-2 text-white">HOME</a></li>
+                  <li><a href="#" class="nav-link px-2">SHOP</a></li>
+                  <li><a href="#" class="nav-link px-2">GITHUB</a></li>
+                  <li><a href="#" class="nav-link px-2">ABOUT</a></li>
+                </ul>
+        
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                  <input type="search" class="form-control" placeholder="Search user by MSSV" aria-label="Search">
+                </form>
+        
+                <div class="text-end">
+                    <button type="button" class="btn btn-success">Search</button>
+                </div>
+              </div>
+            </div>
+          </header>
+         </div>
+       
+    </main>
+    <div>
+        <aside>
+          <input type="checkbox" id="check">
+          <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+          </label>
+          <div class="sidebar">
+            <header>My account</header>
+            <ul id="sidebar-menu">
+              <li><a href="#"><i class="fas fa-user-circle"></i> Your account</a></li>
+              <li><a href="#"><i class="fas fa-wrench"></i> Setting</a></li>
+              <li><a href="#"><i class="fas fa-users-cog"></i> User management</a></li>
+              <li><a href="#"><i class="fas fa-bell"></i> Your notification</a></li>
+              <li><a href="#"><i class="fas fa-newspaper"></i> New management</a></li>
+              <li><a href="#"><i class="fab fa-product-hunt"></i> Product management</a></li>
+              <li><a href="#"><i class="fas fa-qrcode"></i> Cart management</a></li>
+              <li><a href="#"><i class="fas fa-cart-plus"></i> Your Cart</a></li>
+              <li><a href="#"><i class="fas fa-money-bill-wave"></i> Bill management</a></li>
+              <li><a href="#"><i class="fas fa-wallet"></i> Your bill</a></li>
+              <li><a href="#"><i class="fas fa-sign-out-alt"></i> Log out</a></li>
+              
+            </ul>
+          </div>
+        </aside>
+    <section class="pt-5 pb-5">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <div class="container">
+        <div class="row w-100">
+            <div class="col-lg-12 col-md-12 col-12">
+                <h3 class="yourcart">Your Shopping Cart</h3>
+                <p class="numOfProduct">
+                    <i class="quantityOfProduct">1</i> products</p>
+                <table id="shoppingCart" class="table table-condensed table-responsive">
+                    <thead>
+                        <tr>
+                            <th style="width:50%"></th>
+                            <th style="width:10%">Quantity</th>
+                            <th style="width:20%">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-th="Product">
+                                <div class="row">
+                                    <div class="col-md-3 text-left">
+                                        <img src="..\assets\images\product.jpg" alt="" class="img-fluid d-none d-md-block rounded mb-2 shadow ">
+                                    </div>
+                                    <div class="col-md-9 text-left mt-sm-2">
+                                        <h4>Product Name</h4>
+                                        <div class="button_remove">
+                                            <a href="" class="btn_remove">Remove</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td data-th="Quantity">
+                                <input type="number" class="form-control form-control-lg text-center" value="1">
+                            </td>   
+                            <td data-th="Price" class = 'price_product'>000,000 VND</td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+                <div class='line'></div>
+                <div class="total">
+                    <h4 class='total_text'>Total:</h4>
+                    <h4 class="total_price">000,000 VND</h4>
+                </div>
+            </div>
+        </div>
+    
+        <div class="btn_confirm">
+            <a href="" class="confirm">Confirm</a>
+        </div>
+        
+    </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="footer-body">
+        <div class="footer-container">
+        <div class="container">
+          <footer class="py-5 ">
+            <div class="row">
+              <div class="col-2">
+                <h5>Menu</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Shop</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Link github</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Project1</a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                </ul>
+              </div>
+      
+              <div class="col-2">
+                <h5>Contact</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="fab fa-facebook" style="color: blue;"> Facebook</i></a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="fab fa-youtube" style="color: red;"> Youtube</i></a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><i class="fab fa-twitter" style="color: blue;"> Twitter</i></a></li>
+                  <li class="nav-item mb-2"><i class="fas fa-phone-volume"></i> Phone: 0971565773</li>
+                </ul>
+              </div>
+      
+              <div class="col-2">
+                <h5>Address</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><p>1 Đại Cồ Việt, Bách Khoa, Hai Bà Trưng, Hà Nội</p></li>
+                </ul>
+              </div>
+      
+              <div class="col-4 offset-1">
+                <form>
+                  <h5>Subscribe to our newsletter</h5>
+                  <p>Personal information search.</p>
+                  <div class="d-flex w-100 gap-2">
+                    <label for="newsletter1" class="visually-hidden">MSSV</label>
+                    <input id="newsletter1" type="text" class="form-control" placeholder="Search user by MSSV">
+                    <button class="btn btn-primary" type="button">Search</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+      
+            <div class="d-flex justify-content-between py-4 my-4 border-top">
+                <h4><img src="../CSS/Image/logo.jpg" width="20px"> Hà Nội university of science and technology</h4>
+            </div>
+            <br>
+            <br>
+            <div class="footer-title">
+                    One love - One future
+            </div>
+          </footer>
+        </div>
+      
+      
+        </div>
+      </div>
+</body>
+</html>

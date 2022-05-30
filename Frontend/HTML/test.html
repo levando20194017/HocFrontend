@@ -1,0 +1,59 @@
+<div>
+    <GridContainer>
+        <GridItem xs={12} sm={12} md={12}>
+            <Card>
+                <CardHeader color="primary">
+                    <h4 className={classes.cardTitleWhite}>Edit Email</h4>
+                    <p className={classes.cardCategoryWhite}>
+                        Update your current email address
+                    </p>
+                </CardHeader>
+                <CardBody>
+                    <form className={classes.form} noValidate onSubmit={submitHandler2}>
+                        <GridContainer>
+                            <GridItem xs={12} sm={12} md={4}>
+                                <TextField label="Email address" id="new_email" fullWidth required name="new_email"
+                                    autoComplete="new_email" autoFocus onChange={updateMail} />
+                            </GridItem>
+                        </GridContainer>
+                    </form>
+                </CardBody>
+                <CardFooter>
+                    <Button color="primary" type="submit" variant="contained" className={classes.submit}>Update
+                        Email</Button>
+                </CardFooter>
+            </Card>
+        </GridItem>
+        <GridItem xs={12} sm={12} md={12}>
+            <form className={classes.form} noValidate onSubmit={submitHandler}>
+                <Card>
+                    <CardHeader color="primary">
+                        <h4 className={classes.cardTitleWhite}>Edit Password</h4>
+                        <p className={classes.cardCategoryWhite}>Update your Password</p>
+                    </CardHeader>
+                    <CardBody>
+                        <GridContainer>
+                            <GridItem xs={12} sm={12} md={4}>
+                                <TextField id="old_password" label="Old Password" type="password" name="old_password"
+                                    autoComplete="old_password" required autoFocus onChange={updatePass} />
+                            </GridItem>
+                        </GridContainer>
+                        <GridContainer>
+                            <GridItem xs={12} sm={12} md={4}>
+                                <TextField id="new_password" label="New Password" required type="password" />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={4}>
+                                <TextField id="new-password-2" label="Confirm Password" required type="password" />
+                            </GridItem>
+                        </GridContainer>
+                    </CardBody>
+                    <CardFooter>
+                        <Button type="submit" variant="contained" color="primary" className={classes.submit}>Update
+                            Password</Button>
+                    </CardFooter>
+                </Card>
+            </form>
+        </GridItem>
+    </GridContainer>
+</div>
+);

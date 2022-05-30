@@ -1,0 +1,123 @@
+/********************  BEGIN Helvetica Neue *********************/  
+/*********** Helvetica Neue Ultra Light *********/
+@font-face {
+	font-family:'Helvetica Neue';
+	font-style: normal;
+	font-weight: 100;
+	src:local('helvetica neue ultra light'), 
+		local('helvetica neue ultra light'), 
+		url(../font/helvetica/helveticaneueultralight.ttf) format('truetype'),
+		url(../font/helvetica/helveticaneue-ultralight.otf) format('opentype');
+}
+
+/*********** Helvetica Neue Ultra Light Italic *********/
+@font-face {
+	font-family:'Helvetica Neue';
+	font-style: italic;
+	font-weight: 100;
+	src:local('helvetica neue ultra light italic'), 
+		local('helvetica neue ultra light italic'), 
+		url(../font/helvetica/helveticaneueultralightitalic.ttf) format('truetype'),
+		url(../font/helvetica/helveticaneue-ultralightitalic.otf) format('opentype');
+}
+
+
+/*********** Helvetica Neue Light *********/
+@font-face {
+	font-family:'Helvetica Neue';
+	font-style: normal;
+	font-weight: 300;
+	src:local('helvetica neue light'), 
+		local('helvetica neue light'), 
+		url(../font/helvetica/helveticaneuelight.ttf) format('truetype'),
+		url(../font/helvetica/helveticaneue-light.otf) format('opentype');
+}
+
+/*********** Helvetica Neue Light Italic *********/
+@font-face {
+	font-family:'Helvetica Neue';
+	font-style: italic;
+	font-weight: 300;
+	src:local('helvetica neue light italic'), 
+		local('helvetica neue light italic'), 
+		url(../font/helvetica/helveticaneuelightitalic.ttf) format('truetype'),
+		url(../font/helvetica/helveticaneue-lightitalic.otf) format('opentype');
+}
+
+/*********** Helvetica Neue Regular *********/
+@font-face {
+	font-family:'Helvetica Neue';
+	font-style: normal;
+	font-weight: 400;
+	src:local('helvetica neue regular'), 
+		local('helvetica neue regular'), 
+		url(../font/helvetica/helveticaneue.ttf) format('truetype'),
+		url(../font/helvetica/helveticaneue.otf) format('opentype');
+}
+
+/*********** Helvetica Neue Italic *********/
+@font-face {
+	font-family:'Helvetica Neue';
+	font-style: italic;
+	font-weight: 400;
+	src:local('helvetica neue italic'), 
+		local('helvetica neue italic'), 
+		url(../font/helvetica/helveticaneueitalic.ttf) format('truetype'),
+		url(../font/helvetica/helveticaneue-italic.otf) format('opentype');
+}
+
+/*********** Helvetica Neue Medium *********/
+@font-face {
+	font-family:'Helvetica Neue';
+	font-style: normal;
+	font-weight: 500;
+	src:local('helvetica neue medium'), 
+		local('helvetica neue medium'), 
+		url(../font/helvetica/helveticaneuemedium.ttf) format('truetype'),
+		url(../font/helvetica/helveticaneue-medium.otf) format('opentype');
+}
+
+/*********** Helvetica Neue Bold *********/
+@font-face {
+	font-family:'Helvetica Neue';
+	font-style: normal;
+	font-weight: 600;
+	src:local('helvetica neue bold'), 
+		local('helvetica neue bold'), 
+		url(../font/helvetica/helveticaneuebold.ttf) format('truetype'),
+		url(../font/helvetica/helveticaneue-bold.otf) format('opentype');
+}
+
+/*********** Helvetica Neue Bold Italic *********/
+@font-face {
+	font-family:'Helvetica Neue';
+	font-style: italic;
+	font-weight: 600;
+	src:local('helvetica neue bold italic'), 
+		local('helvetica neue bold italic'), 
+		url(../font/helvetica/helveticaneuebolditalic.ttf) format('truetype'),
+		url(../font/helvetica/helveticaneue-bolditalic.otf) format('opentype');
+}
+
+/*********** Helvetica Neue extral Bold *********/
+@font-face {
+	font-family:'Helvetica Neue';
+	font-style: normal;
+	font-weight: 700;
+	src:local('helvetica neue extral bold'), 
+		local('helvetica neue extral bold'), 
+		url(../font/helvetica/helveticaneuecondensedbold.ttf) format('truetype'),
+		url(../font/helvetica/helveticaneue-condensedbold.otf) format('opentype');
+}
+
+/*********** Helvetica Neue Ultra Bold *********/
+@font-face {
+	font-family:'Helvetica Neue';
+	font-style: normal;
+	font-weight: 800;
+	src:local('helvetica neue ultra bold'), 
+		local('helvetica neue ultra bold'), 
+		url(../font/helvetica/helveticaneuecondensedblack.ttf) format('truetype'),
+		url(../font/helvetica/helveticaneue-condensedblack.otf) format('opentype');
+}
+/********************  END Helvetica Neue *********************/
