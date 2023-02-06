@@ -1,0 +1,115 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="./body.css" rel="stylesheet">
+
+<body>
+    <div id="toast">
+        <!-- <div class="toast toast--success">
+            <div class="toast_icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast_body">
+                <h3 class="toast_title">Success</h3>
+                <p class="toast_msg">Tham gia nhóm Học lập trình tại F8 trên Facebook để cùng nhau trao đổi trong quá
+                    trình học tập ❤️</p>
+            </div>
+            <div class="toast_close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="toast toast--info">
+            <div class="toast_icon">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+            <div class="toast_body">
+                <h3 class="toast_title">Information</h3>
+                <p class="toast_msg">Tham gia nhóm Học lập trình tại F8 trên Facebook để cùng nhau trao đổi trong quá
+                    trình học tập ❤️</p>
+            </div>
+            <div class="toast_close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div> -->
+        <!-- <div class="toast toast--warning">
+            <div class="toast_icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast_body">
+                <h3 class="toast_title">Warning</h3>
+                <p class="toast_msg">Tham gia nhóm Học lập trình tại F8 trên Facebook để cùng nhau trao đổi trong quá
+                    trình học tập ❤️</p>
+            </div>
+            <div class="toast_close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="toast toast--error">
+            <div class="toast_icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="toast_body">
+                <h3 class="toast_title">Error</h3>
+                <p class="toast_msg">Tham gia nhóm Học lập trình tại F8 trên Facebook để cùng nhau trao đổi trong quá
+                    trình học tập ❤️</p>
+            </div>
+            <div class="toast_close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div> -->
+
+    </div>
+
+    <div class="button">
+        <div onclick="showSuccessToast();" class="btn btn--success">Show success</div>
+        <div onclick="showErrorToast();" class="btn btn--danger">Show danger</div>
+    </div>
+
+    <script>
+        function toast({
+            title = '', message = '', type = 'info', duration = 3000
+        }) {
+            const main = document.getElementById('toast')
+            if (main) {
+                const toast = document.createElement('div');
+                const icons = {
+                    success: 'fas fa-check-circle',
+                    info: 'fas fa-info-circle',
+                    warning: 'fas fa-exclamation-circle',
+                    error: 'fas fa-exclamation-circle'
+                }
+                toast.classList.add('toast', `toast--${type}`)
+                toast.innerHTML = `<div class="toast_icon">
+                <i class="${icons[type]} "></i>
+            </div>
+            <div class="toast_body">
+                <h3 class="toast_title">${title}</h3>
+                <p class="toast_msg">${message}</p>
+            </div>
+            <div class="toast_close">
+                <i class="fas fa-times"></i>
+            </div>
+                `
+                main.appendChild(toast);
+            }
+        }
+        function showSuccessToast() {
+            toast({
+                title: 'Success',
+                message: 'Tham gia nhóm Học lập trình tại F8 trên Facebook để cùng nhau trao đổi trong quá trình học tập ❤️',
+                type: 'success',
+                duration: 3000
+            })
+        }
+        function showErrorToast() {
+            toast({
+                title: 'Error',
+                message: 'Tham gia nhóm Học lập trình tại F8 trên Facebook để cùng nhau trao đổi trong quá trình học tập ❤️',
+                type: 'error',
+                duration: 3000
+            })
+        }
+    </script>
+</body>
